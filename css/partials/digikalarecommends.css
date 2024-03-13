@@ -1,0 +1,82 @@
+.digikala__recommends__container {
+  width: 100%;
+  height: 410px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 25px;
+  .digikala__recommends__header {
+    width: 70%;
+    & h2 {
+      text-align: center;
+      font-weight: 400;
+    }
+  }
+  .digikala__recommends__main {
+    width: 70%;
+    height: 310px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1px;
+    background-color: #e0e0e2;
+    border: 1px solid #e0e0e2;
+    border-radius: 15px;
+    .digikala__recommends__main__sub {
+      width: 100%;
+      height: calc(50% - 1px);
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 1px;
+      .digikala__recommends__main__sub__part {
+        width: calc((100% / 7) - 1px);
+        height: 100%;
+        background-color: white;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+        text-decoration: none;
+        color: black;
+        .recommends__image__wrapper {
+          width: 85px;
+          height: 85px;
+          border-radius: 50%;
+          background-color: #e0e0e2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          & img {
+            width: 60px;
+            height: 60px;
+            mix-blend-mode: multiply;
+          }
+        }
+        & span {
+          font-size: 14px;
+        }
+      }
+      &:nth-of-type(1) {
+        .digikala__recommends__main__sub__part:nth-of-type(1) {
+          border-radius: 0px 15px 0px 0px;
+        }
+        .digikala__recommends__main__sub__part:nth-of-type(7) {
+          border-radius: 15px 0px 0px 0px;
+        }
+      }
+      &:nth-of-type(2) {
+        .digikala__recommends__main__sub__part:nth-of-type(1) {
+          border-radius: 0px 0px 15px 0px;
+        }
+        .digikala__recommends__main__sub__part:nth-of-type(7) {
+          border-radius: 0px 0px 0px 15px;
+        }
+      }
+    }
+  }
+}

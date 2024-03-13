@@ -1,0 +1,23 @@
+.dual__add__banner__container{
+    width: 100%;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .dual__add__banner__center{
+        width: 70%;
+        height: 265px;
+        display: flex;
+        justify-content: space-between;
+        .dual__banner{
+            width: 49%;
+            height: 100%;
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+        }
+    }
+}

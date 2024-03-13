@@ -1,0 +1,16 @@
+.autoSlider {
+  width: 100%;
+  height: 400px;
+}
+.swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  opacity: 0.6;
+  transition: 500ms;
+}
+.swiper-pagination-bullet-active {
+  width: 15px;
+  border-radius: 5px;
+  opacity: 1;
+  background-color: whitesmoke;
+}

@@ -1,0 +1,105 @@
+.first__add__banner__wrapper{
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .first__add__banner{
+        width: 70%;
+        height: 110px;
+        border-radius: 15px;
+        background: linear-gradient(90deg, rgba(111,255,108,1) 0%, rgba(24,168,21,1) 62%);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 20px;
+        .first__add__banner__first__part{
+            height: 100%;
+            width: 45%;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            .first__add__banner__image{
+                width: 70px;
+                height: 70px;
+            }
+            .first__add__banner__first__part__discount__label{
+                margin: 20px;
+                padding: 8px;
+                font-size: 14px;
+                background-color: #39AE00;
+                border-radius: 20px;
+                color: beige;
+            }
+        }
+        .first__add__banner__second__part{
+            width: 65%;
+            height: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            align-items: center;
+            column-gap: 20px;
+            .first__add__banner__second__part__discount{
+                width: 70px;
+                height: 70px;
+                background-color: aliceblue;
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                position: relative;
+                & img{
+                    width: 55px;
+                    height: 55px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin: auto auto;
+                }
+                .discount__price__under__image{
+                    display: inline-block;
+                    position: absolute;
+                    top: calc(100% - 12px);
+                    left: calc(100% - 30px);
+                    width: 30px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    background-color: red;
+                    text-align: center;
+                    padding: 3px;
+                    border-radius: 30px;
+                    font-family: homa;
+                    color: aliceblue;
+
+
+                }
+            }
+            .see__more__discount{
+                width: 145px;
+                height: 50px;
+                line-height: 50px;
+                background-color: white;
+                text-align: center;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 5px;
+                padding: 5px;
+                font-size: 12px;
+                color: #46d300;
+                & svg{
+                    scale: 0.8;
+                    margin-top: -2px;
+                    fill: #18a815;
+                }
+                
+                
+            }
+        }
+
+    }
+}
